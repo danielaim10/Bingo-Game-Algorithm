@@ -1,0 +1,33 @@
+Problema 1
+
+Timp de implementare : 6 zile ( aproximativ 5-6 ore pe zi)
+Explicatii: Am citit prin functia stocare fiecare card in parte. 
+Prin functia citirebila se citeste in primul rand fiecare bila extrasa.
+Am folosit un pointer care stocheaza cuvantul initial, cel de dianinte de "-".
+Pentru bilele care doar coloreaza valoarea din card, am luat primul element al
+bilei si l-am comparat cu fiecare caracter posibil.
+Pentru functii am comparat pointerul p cu fiecare nume de comanda in parte prin
+functia strcmp.
+Am stocat intr-o variabila var rezultatul functiei verificare. In cazul in care 
+var nu este 1, atunci nu exista niciun castigator, asadar se afiseaza.
+
+Problema 2
+
+Timp de incercare : 5 zile ( aproximativ 5-6 ore)
+Explicatii: Am citit biblioteca cu carti si fiecare caracteristica a acesteia.
+Functia SEARCH verifica intai pentru cazul in care primul element al cuvantului
+pe care il cautam sa fie un numar, in acest caz aplicand functia SEARCH in an 
+aparitiei.
+In celelalte doua cazuri verifica daca sirul de caractere cautat este autorul 
+sau titlu cartii respective, prin functia verif, ca sa fie case-insensitive.
+Functia REPLACE face o copie a descrieii cartii in variabila copy deoarece vom 
+prelucra continutul sirului de caractere si nu doresc sa distrug descrierea 
+cartii.
+Asadar, cat timp exista cuvinte in descriere, compara cuvantul din descriere cu 
+cuvantul pe care il cautam (word1). In caz afirmativ, concatenam intr-o
+variabila r in primul rand continutul de dinaintea cuvantului cautat, dupa aceea
+cuvantul cu care vrem sa inlocuim (word2) si in final, restul continutului.
+Alocam dinamic in memoria descrierii dimensiunea necesara pentru a copia 
+continutul lui r.
+Functia verificare citeste fiecare comanda in parte, si pentru fiecare caz, 
+citim primul element al comenzii si facem comanda corespunzatoare.
